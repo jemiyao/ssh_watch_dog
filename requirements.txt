@@ -1,0 +1,15 @@
+bcrypt==4.0.1
+blinker==1.6.2
+Jinja2==3.1.2
+MarkupSafe==2.1.2
+paramiko==3.1.0
+pip==23.1.2
+pipreqs==0.4.13
+psutil==5.9.5
+pycparser==2.21
+PyNaCl==1.5.0
+requests==2.30.0
+setuptools==65.5.0
+urllib3==2.0.2
+Werkzeug==2.3.3
+yarg==0.1.9
