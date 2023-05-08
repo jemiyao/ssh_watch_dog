@@ -59,11 +59,11 @@ def run_command(section, ssh, command):
 
 @app.route('/stat', methods=['GET'])
 def ssh_stat():
-    conf_path = "ssh_wd.ini"
+    conf_path = "ssh_wd.ini.template"
     if not os.path.exists(conf_path):
         conf_path = f"{os.path.expanduser('~')}/.watchdog/{conf_path}"
         if not os.path.exists(conf_path):
-            logger.error("config file not found in path (ssh_wd.ini or ~/.watchdog/ssh_wd.ini)")
+            logger.error("config file not found in path (ssh_wd.ini.template or ~/.watchdog/ssh_wd.ini.template)")
             return "config error", 500
 
     config_reader = configparser.ConfigParser()
